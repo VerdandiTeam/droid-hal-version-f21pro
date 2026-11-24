@@ -11,6 +11,13 @@
 %define have_vibrator_native 1
 %define have_led 1
 
+BuildRequires: droid-hal-%{device}
+BuildRequires: droid-hal-%{device}-img-boot
+BuildRequires: droid-hal-%{device}-img-recovery
+BuildRequires: droid-hal-%{device}-kernel
+BuildRequires: droid-hal-%{device}-tools
+BuildRequires: droid-hal-%{device}-kernel-dtbo
+
 %include droid-hal-version/droid-hal-version.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
